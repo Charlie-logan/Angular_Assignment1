@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h4>Name of the Courses: </h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+                <li (click)="onSelect(cObj)" style="cursor:pointer;" class="list-group-item list-group-item-action" *ngFor="let cObj of courseList;">
+                    {{cObj.course_id}}
+                    <span class="float-right badge badge-pills badge-success">
+                        {{cObj.fees}}
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
